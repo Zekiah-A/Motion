@@ -237,8 +237,8 @@ namespace mt
 
         if (HasVideo())
         {
-            const AVCodec* codec = avcodec_find_decoder(m_data->videoContext->codec_id);
-            m_data->videoCodec = const_cast<AVCodec*>(codec);
+            m_data->videoContext = avcodec_alloc_context3(nullptr);
+            avcodec_parameters_to_context(m_data->videoContext, m_data->formatContext->streams[m_data->videoStreamID]->codecpar);
 
             if (!m_data->videoContext)
             {
@@ -282,6 +282,7 @@ namespace mt
                     }
                 }
             }
+            std::cout << "We literally made it out of has video"  << std::endl;
         }
 
         if (HasAudio())
