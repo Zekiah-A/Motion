@@ -282,7 +282,6 @@ namespace mt
                     }
                 }
             }
-            std::cout << "We literally made it out of has video"  << std::endl;
         }
 
         if (HasAudio())
