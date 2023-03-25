@@ -62,6 +62,7 @@ namespace MotionNET.SFML
 
             GC.SuppressFinalize(this);
         }
+        
         public void Draw(RenderTarget target, RenderStates states)
         {
             @base.EnsureValid();
@@ -124,12 +125,13 @@ namespace MotionNET.SFML
     {
         public static RenderStatesMarshal MarshalRenderStates(this RenderStates states)
         {
-            var marshal = new RenderStatesMarshal();
-
-            marshal.BlendMode = states.BlendMode;
-            marshal.Transform = states.Transform;
-            marshal.Texture = states.Texture?.CPointer ?? IntPtr.Zero;
-            marshal.Shader = states.Shader?.CPointer ?? IntPtr.Zero;
+            var marshal = new RenderStatesMarshal
+            {
+                BlendMode = states.BlendMode,
+                Transform = states.Transform,
+                Texture = states.Texture?.CPointer ?? IntPtr.Zero,
+                Shader = states.Shader?.CPointer ?? IntPtr.Zero
+            };
 
             return marshal;
         }
