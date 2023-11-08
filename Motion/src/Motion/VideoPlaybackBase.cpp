@@ -1,8 +1,5 @@
-#ifndef MOTION_VIDEOPLAYBACKBASE_CPP
-#define MOTION_VIDEOPLAYBACKBASE_CPP
-
-#include <Motion/VideoPlayback.h>
-#include <Motion/VideoPlaybackBase.hpp>
+#include "../../include/Motion/VideoPlayback.h"
+#include "../../include/Motion/VideoPlaybackBase.hpp"
 
 namespace mt
 {
@@ -190,5 +187,3 @@ unsigned int mtVideoPlayback_GetPlayedFrameCount(mtVideoPlaybackBase* VideoPlayb
 {
     return VideoPlayback->Value->GetPlayedFrameCount();
 }
-
-#endif

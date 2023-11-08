@@ -1,6 +1,4 @@
-#ifndef MOTION_AUDIOPLAYBACKBASE_HPP
-#define MOTION_AUDIOPLAYBACKBASE_HPP
-
+#pragma once
 #include <memory>
 #include <queue>
 #include <thread>
@@ -15,10 +13,10 @@
 #include <SFML/System/Lock.hpp>
 #include <SFML/System/Clock.hpp>
 
-#include <Motion/Export.h>
-#include <Motion/DataSource.hpp>
-#include <Motion/priv/AudioPacket.hpp>
-#include <Motion/State.hpp>
+#include "Export.h"
+#include "DataSource.hpp"
+#include "priv/AudioPacket.hpp"
+#include "State.hpp"
 
 namespace mt
 {
@@ -64,5 +62,3 @@ namespace mt
         virtual void StopStream() = 0;
     };
 }
-
-#endif

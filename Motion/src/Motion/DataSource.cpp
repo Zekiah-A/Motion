@@ -1,8 +1,5 @@
-#ifndef MOTION_DATASOURCE_CPP
-#define MOTION_DATASOURCE_CPP
-
-#include <Motion/DataSource.h>
-#include <Motion/DataSource.hpp>
+#include "../../include/Motion/DataSource.h"
+#include "../../include/Motion/DataSource.hpp"
 
 extern "C"
 {
@@ -876,5 +873,3 @@ sfBool mtDataSource_GetIsEndofFileReached(mtDataSource* DataSource)
 {
     return DataSource->Value->IsEndofFileReached();
 }
-
-#endif

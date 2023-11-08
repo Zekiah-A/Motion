@@ -1,6 +1,4 @@
-#ifndef MOTION_AUDIOPACKET_HPP
-#define MOTION_AUDIOPACKET_HPP
-
+#pragma once
 #include <cstdint>
 #include <cstddef>
 #include <memory>
@@ -27,5 +25,3 @@ namespace mt
         typedef std::shared_ptr<mt::priv::AudioPacket> AudioPacketPtr;
     }
 }
-
-#endif

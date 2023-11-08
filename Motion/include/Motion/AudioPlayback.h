@@ -1,10 +1,8 @@
-#ifndef MOTION_AUDIOPLAYBACK_H
-#define MOTION_AUDIOPLAYBACK_H
-
-#include <Motion/CSFMLStructs.h>
-#include <Motion/MotionStructs.h>
-#include <Motion/Export.h>
-#include <Motion/Types.h>
+#pragma once
+#include "../../src/Motion/CSFMLStructs.h"
+#include "../../src/Motion/MotionStructs.h"
+#include "Export.h"
+#include "Types.h"
 
 MOTION_C_API mtAudioPlaybackBase* mtAudioPlaybackBase_Create(mtDataSource* DataSource, sfTime OffsetCorrection, mtSetupStreamCB SetupCB, mtSetPlaybackSpeedCB SetSpeedCB, mtChangeStateCB StartCB, mtChangeStateCB PauseCB, mtChangeStateCB StopCB);
 MOTION_C_API void mtAudioPlaybackBase_Destroy(mtAudioPlaybackBase* AudioPlayback);
@@ -18,5 +16,3 @@ MOTION_C_API float mtSFMLAudioPlayback_GetVolume(mtSFMLAudioPlayback* AudioPlayb
 MOTION_C_API void mtSFMLAudioPlayback_SetVolume(mtSFMLAudioPlayback* AudioPlayback, float Volume);
 MOTION_C_API sfTime mtSFMLAudioPlayback_GetOffsetCorrection(mtSFMLAudioPlayback* AudioPlayback);
 MOTION_C_API void mtSFMLAudioPlayback_SetOffsetCorrection(mtSFMLAudioPlayback* AudioPlayback, sfTime OffsetCorrection);
-
-#endif

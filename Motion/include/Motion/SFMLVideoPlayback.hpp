@@ -1,6 +1,4 @@
-#ifndef MOTION_SFMLVIDEOPLAYBACK_HPP
-#define MOTION_SFMLVIDEOPLAYBACK_HPP
-
+#pragma once
 #include <SFML/Graphics/Drawable.hpp>
 #include <SFML/Graphics/Transformable.hpp>
 #include <SFML/Graphics/Texture.hpp>
@@ -10,8 +8,8 @@
 #include <SFML/Graphics/RenderTarget.hpp>
 #include <SFML/Graphics/Image.hpp>
 
-#include <Motion/Export.h>
-#include <Motion/VideoPlaybackBase.hpp>
+#include "Export.h"
+#include "VideoPlaybackBase.hpp"
 
 namespace mt
 {
@@ -37,5 +35,3 @@ namespace mt
         void ClearTexture();
     };
 }
-
-#endif

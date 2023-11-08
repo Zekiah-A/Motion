@@ -1,10 +1,8 @@
-#ifndef MOTION_SFMLAUDIOPLAYBACK_HPP
-#define MOTION_SFMLAUDIOPLAYBACK_HPP
-
+#pragma once
 #include <SFML/Audio/SoundStream.hpp>
 
-#include <Motion/Export.h>
-#include <Motion/AudioPlaybackBase.hpp>
+#include "Export.h"
+#include "AudioPlaybackBase.hpp"
 
 namespace mt
 {
@@ -27,5 +25,3 @@ namespace mt
         void StopStream();
     };
 }
-
-#endif

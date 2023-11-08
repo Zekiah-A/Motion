@@ -1,8 +1,5 @@
-#ifndef MOTION_SFMLAUDIOPLAYBACK_CPP
-#define MOTION_SFMLAUDIOPLAYBACK_CPP
-
-#include <Motion/AudioPlayback.h>
-#include <Motion/SFMLAudioPlayback.hpp>
+#include "../../include/Motion/AudioPlayback.h"
+#include "../../include/Motion/SFMLAudioPlayback.hpp"
 
 namespace mt
 {
@@ -105,5 +102,3 @@ void mtSFMLAudioPlayback_SetOffsetCorrection(mtSFMLAudioPlayback* AudioPlayback,
 {
     AudioPlayback->Value->SetOffsetCorrection(sf::microseconds(OffsetCorrection.microseconds));
 }
-
-#endif

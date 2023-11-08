@@ -1,6 +1,4 @@
-#ifndef MOTION_VIDEOPACKET_HPP
-#define MOTION_VIDEOPACKET_HPP
-
+#pragma once
 #include <cstdint>
 #include <cstddef>
 #include <memory>
@@ -24,5 +22,3 @@ namespace mt
         typedef std::shared_ptr<mt::priv::VideoPacket> VideoPacketPtr;
     }
 }
-
-#endif

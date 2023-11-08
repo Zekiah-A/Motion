@@ -26,9 +26,7 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef MOTION_SFMLSTRUCTS_H
-#define MOTION_SFMLSTRUCTS_H
-
+#pragma once
 #include <cstdint>
 
 #include <SFML/Graphics/RenderWindow.hpp>
@@ -37,7 +35,7 @@
 #include <SFML/Graphics/Shader.hpp>
 #include <SFML/Graphics/BlendMode.hpp>
 
-#include <Motion/Types.h>
+#include "../../include/Motion/Types.h"
 
 typedef struct
 {
@@ -176,5 +174,3 @@ inline sf::RenderStates convertRenderStates(const sfRenderStates* states)
 
     return sfmlStates;
 }
-
-#endif

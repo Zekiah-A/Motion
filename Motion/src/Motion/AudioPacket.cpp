@@ -1,7 +1,4 @@
-#ifndef MOTION_AUDIOPACKET_CPP
-#define MOTION_AUDIOPACKET_CPP
-
-#include <Motion/priv/AudioPacket.hpp>
+#include "../../include/Motion/priv/AudioPacket.hpp"
 
 namespace mt
 {
@@ -37,5 +34,3 @@ namespace mt
         }
     }
 }
-
-#endif

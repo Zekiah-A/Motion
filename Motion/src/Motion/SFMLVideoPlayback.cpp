@@ -1,8 +1,5 @@
-#ifndef MOTION_SFMLVIDEOPLAYBACK_CPP
-#define MOTION_SFMLVIDEOPLAYBACK_CPP
-
-#include <Motion/VideoPlayback.h>
-#include <Motion/SFMLVideoPlayback.hpp>
+#include "../../include/Motion/VideoPlayback.h"
+#include "../../include/Motion/SFMLVideoPlayback.hpp"
 
 namespace mt
 {
@@ -112,5 +109,3 @@ unsigned int mtSFMLVideoPlayback_GetPlayedFrameCount(mtSFMLVideoPlayback* VideoP
 {
     return VideoPlayback->Value->GetPlayedFrameCount();
 }
-
-#endif

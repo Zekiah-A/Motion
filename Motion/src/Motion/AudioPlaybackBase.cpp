@@ -1,8 +1,5 @@
-#ifndef MOTION_AUDIOPLAYBACKBASE_CPP
-#define MOTION_AUDIOPLAYBACKBASE_CPP
-
-#include <Motion/AudioPlayback.h>
-#include <Motion/AudioPlaybackBase.hpp>
+#include "../../include/Motion/AudioPlayback.h"
+#include "../../include/Motion/AudioPlaybackBase.hpp"
 
 constexpr std::size_t FILL_SAMPLE_COUNT = 2048;
 
@@ -283,5 +280,3 @@ void mtAudioPlaybackBase_SetOffsetCorrection(mtAudioPlaybackBase* AudioPlayback,
 {
     AudioPlayback->Value->SetOffsetCorrection(sf::microseconds(OffsetCorrection.microseconds));
 }
-
-#endif

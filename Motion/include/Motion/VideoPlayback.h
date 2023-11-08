@@ -1,10 +1,8 @@
-#ifndef MOTION_VIDOEPLAYBACK_H
-#define MOTION_VIDEOPLAYBACK_H
-
-#include <Motion/CSFMLStructs.h>
-#include <Motion/MotionStructs.h>
-#include <Motion/Export.h>
-#include <Motion/Types.h>
+#pragma once
+#include "../../src/Motion/CSFMLStructs.h"
+#include "../../src/Motion/MotionStructs.h"
+#include "Export.h"
+#include "Types.h"
 
 MOTION_C_API mtVideoPlaybackBase* mtVideoPlaybackBase_Create(mtDataSource* DataSource, mtCreateTextureCB CreateCB, mtUpdateTextureCB UpdateCB, mtClearTextureCB ClearCB);
 MOTION_C_API void mtVideoPlaybackBase_Destroy(mtVideoPlaybackBase* VideoPlayback);
@@ -18,5 +16,3 @@ MOTION_C_API void mtSFMLVideoPlayback_DrawRenderWindow(mtSFMLVideoPlayback* Vide
 MOTION_C_API void mtSFMLVideoPlayback_DrawRenderTexture(mtSFMLVideoPlayback* VideoPlayback, sfRenderTexture* RenderTexture, sfRenderStates* RenderStates);
 MOTION_C_API void mtSFMLVideoPlayback_GetLastFrame(mtSFMLVideoPlayback* VideoPlayback, sfImage* Image);
 MOTION_C_API unsigned int mtSFMLVideoPlayback_GetPlayedFrameCount(mtSFMLVideoPlayback* VideoPlayback);
-
-#endif

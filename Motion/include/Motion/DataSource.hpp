@@ -1,6 +1,4 @@
-#ifndef MOTION_DATASOURCE_HPP
-#define MOTION_DATASOURCE_HPP
-
+#pragma once
 #include <string>
 #include <cstdint>
 #include <memory>
@@ -18,12 +16,12 @@
 #include <SFML/System/Time.hpp>
 #include <SFML/System/Clock.hpp>
 
-#include <Motion/Export.h>
-#include <Motion/priv/AudioPacket.hpp>
-#include <Motion/AudioPlaybackBase.hpp>
-#include <Motion/priv/VideoPacket.hpp>
-#include <Motion/VideoPlaybackBase.hpp>
-#include <Motion/State.hpp>
+#include "Export.h"
+#include "priv/AudioPacket.hpp"
+#include "AudioPlaybackBase.hpp"
+#include "priv/VideoPacket.hpp"
+#include "VideoPlaybackBase.hpp"
+#include "State.hpp"
 
 namespace mt
 {
@@ -87,5 +85,3 @@ namespace mt
         bool IsEndofFileReached() const;
     };
 }
-
-#endif

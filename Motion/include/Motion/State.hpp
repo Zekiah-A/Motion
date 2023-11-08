@@ -1,6 +1,4 @@
-#ifndef MOTION_STATE_HPP
-#define MOTION_STATE_HPP
-
+#pragma once
 namespace mt
 {
     enum State
@@ -10,5 +8,3 @@ namespace mt
         Paused
     };
 }
-
-#endif

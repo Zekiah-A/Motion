@@ -1,6 +1,4 @@
-#ifndef MOTION_VIDEOPLAYBACKBASE_HPP
-#define MOTION_VIDEOPLAYBACKBASE_HPP
-
+#pragma once
 #include <memory>
 #include <queue>
 #include <cmath>
@@ -10,10 +8,10 @@
 #include <SFML/System/Mutex.hpp>
 #include <SFML/System/Lock.hpp>
 
-#include <Motion/Export.h>
-#include <Motion/DataSource.hpp>
-#include <Motion/State.hpp>
-#include <Motion/priv/VideoPacket.hpp>
+#include "Export.h"
+#include "DataSource.hpp"
+#include "State.hpp"
+#include "priv/VideoPacket.hpp"
 
 namespace mt
 {
@@ -51,5 +49,3 @@ namespace mt
         virtual void ClearTexture() = 0;
     };
 }
-
-#endif

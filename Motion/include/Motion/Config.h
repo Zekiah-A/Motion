@@ -1,6 +1,4 @@
-#ifndef MOTION_CONFIG_H
-#define MOTION_CONFIG_H
-
+#pragma once
 #if defined(_WIN32) || defined(__WIN32__)
     #define MOTION_SYSTEM_WINDOWS
 #elif defined(linux) || defined(__linux)
@@ -33,6 +31,4 @@
         #define MOTION_CXX_API_EXPORT
         #define MOTION_CXX_API_IMPORT
     #endif
-#endif
-
 #endif

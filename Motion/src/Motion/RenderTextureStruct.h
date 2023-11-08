@@ -24,14 +24,13 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_RENDERTEXTURESTRUCT_H
-#define SFML_RENDERTEXTURESTRUCT_H
+#pragma once
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
 #include <SFML/Graphics/RenderTexture.hpp>
-#include <Motion/ViewStruct.h>
+#include "ViewStruct.h"
 
 
 ////////////////////////////////////////////////////////////
@@ -40,10 +39,7 @@
 struct sfRenderTexture
 {
     sf::RenderTexture This;
-    const sfTexture*  Target;
+    const sf::Texture*  Target;
     sfView            DefaultView;
     sfView            CurrentView;
 };
-
-
-#endif // SFML_RENDERTEXTURESTRUCT_H

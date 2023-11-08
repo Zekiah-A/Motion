@@ -1,10 +1,8 @@
-#ifndef MOTION_DATASOURCE_H
-#define MOTION_DATASOURCE_H
-
-#include <Motion/CSFMLStructs.h>
-#include <Motion/MotionStructs.h>
-#include <Motion/Export.h>
-#include <Motion/Types.h>
+#pragma once
+#include "../../src/Motion/CSFMLStructs.h"
+#include "../../src/Motion/MotionStructs.h"
+#include "Export.h"
+#include "Types.h"
 
 typedef enum
 {
@@ -33,5 +31,3 @@ MOTION_C_API void mtDataSource_Update(mtDataSource* DataSource);
 MOTION_C_API float mtDataSource_GetPlaybackSpeed(mtDataSource* DataSource);
 MOTION_C_API void mtDataSource_SetPlaybackSpeed(mtDataSource* DataSource, float PlaybackSpeed);
 MOTION_C_API sfBool mtDataSource_GetIsEndofFileReached(mtDataSource* DataSource);
-
-#endif

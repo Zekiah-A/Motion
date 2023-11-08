@@ -1,11 +1,10 @@
-#ifndef MOTION_MOTIONSTRUCTS_H
-#define MOTION_MOTIONSTRUCTS_H
-
-#include <Motion/DataSource.hpp>
-#include <Motion/AudioPlaybackBase.hpp>
-#include <Motion/VideoPlaybackBase.hpp>
-#include <Motion/SFMLAudioPlayback.hpp>
-#include <Motion/SFMLVideoPlayback.hpp>
+#pragma once
+#include "../../include/Motion/DataSource.hpp"
+#include "../../include/Motion/AudioPlaybackBase.hpp"
+#include "../../include/Motion/VideoPlaybackBase.hpp"
+#include "../../include/Motion/SFMLAudioPlayback.hpp"
+#include "../../include/Motion/SFMLVideoPlayback.hpp"
+#include "../../include/Motion/Types.h"
 
 class DummyVideoPlayback : public mt::VideoPlaybackBase
 {
@@ -68,5 +67,3 @@ struct mtSFMLVideoPlayback
 {
     mt::SFMLVideoPlayback* Value;
 };
-
-#endif

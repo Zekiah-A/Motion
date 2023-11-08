@@ -1,7 +1,7 @@
-#ifndef MOTION_TYPES_H
-#define MOTION_TYPES_H
-
+#pragma once
 // CSFML Types
+#include <cstdint>
+
 typedef struct sfRenderTexture sfRenderTexture;
 typedef struct sfRenderWindow sfRenderWindow;
 typedef struct sfView sfView;
@@ -23,5 +23,3 @@ typedef void(*mtClearTextureCB)();
 typedef void(*mtSetupStreamCB)(unsigned int ChannelCount, int SampleRate);
 typedef void(*mtSetPlaybackSpeedCB)(float PlaybackSpeed);
 typedef void(*mtChangeStateCB)();
-
-#endif

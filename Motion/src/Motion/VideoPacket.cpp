@@ -1,7 +1,4 @@
-#ifndef MOTION_VIDEOPACKET_CPP
-#define MOTION_VIDEOPACKET_CPP
-
-#include <Motion/priv/VideoPacket.hpp>
+#include "../../include/Motion/priv/VideoPacket.hpp"
 
 namespace mt
 {
@@ -24,5 +21,3 @@ namespace mt
         }
     }
 }
-
-#endif
